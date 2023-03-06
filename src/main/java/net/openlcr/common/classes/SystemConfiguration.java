@@ -22,9 +22,9 @@ package net.openlcr.common.classes;
  */
 public class SystemConfiguration {
 
-    private String logFileName = "utique.log";
+    private String logFileName = "openlcr.log";
     private String logDir = "/var/log/utique/";
-    private String mySQLServer = "192.168.177.129";
+    private String mySQLServer = "127.0.0.1";
     private String mySQLUser = "root";
     private String mySQLPass = "lcrpass";
     private String mySQLDatabase = "lcr";
@@ -37,7 +37,7 @@ public class SystemConfiguration {
     private boolean send100Trying = false;
     private String locale = "US";
     private boolean cacheEnabled = true;
-    private int httpPort = 9000;
+    
     /**
      * @return the logFileName
      */
@@ -246,20 +246,6 @@ public class SystemConfiguration {
      */
     public void setLocale(String locale) {
         this.locale = locale;
-    }
-
-    /**
-     * @return the httpPort
-     */
-    public int getHttpPort() {
-        return httpPort;
-    }
-
-    /**
-     * @param httpPort the httpPort to set
-     */
-    public void setHttpPort(int httpPort) {
-        this.httpPort = httpPort;
     }
 
     /**
