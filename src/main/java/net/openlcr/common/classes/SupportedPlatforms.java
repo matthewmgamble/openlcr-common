@@ -14,37 +14,24 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
-/*
-
-This file contains an ENUM list of all carriers supported for the "type" argument and is
-used by the CLI loader to validate we can support processing rate sheet files from that carrier.
-
-This needs to be moved to be more generic to support non-Canadian carriers in the future
-
-*/
-package net.openlcr.utique.common.classes;
+package net.openlcr.common.classes;
 
 
 /**
  *
  * @author mgamble
  */
-public enum SupportedCarriers {
-    IRISTEL("iristel"),
-    VOIPMS("voipms"),
-    THINKTEL("thinktel"), 
-    BELL("bell"),
-    PRIMUS("primus"),
-    BANDWIDTH("bandwidth"),
-    FLOWROUTE("flowroute");
+public enum SupportedPlatforms {
+    METASWITCH("metaswitch"),
+    BROADWORKS("broadworks"),
+    M6("m6");
     
     private final String text;
 
     /**
      * @param text
      */
-    private SupportedCarriers(final String text) {
+    private SupportedPlatforms(final String text) {
         this.text = text;
     }
 

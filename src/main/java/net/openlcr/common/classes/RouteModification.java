@@ -14,24 +14,23 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package net.openlcr.utique.common.classes;
-
+package net.openlcr.common.classes;
 
 /**
  *
  * @author mgamble
  */
-public enum SupportedPlatforms {
-    METASWITCH("metaswitch"),
-    BROADWORKS("broadworks"),
-    M6("m6");
-    
+public enum RouteModification {
+    PREPEND("prepend"),
+    NONE("none"),
+    APPEND("append");
+
     private final String text;
 
     /**
      * @param text
      */
-    private SupportedPlatforms(final String text) {
+    private RouteModification(final String text) {
         this.text = text;
     }
 
@@ -43,5 +42,4 @@ public enum SupportedPlatforms {
         return text;
     }
 
-   
 }

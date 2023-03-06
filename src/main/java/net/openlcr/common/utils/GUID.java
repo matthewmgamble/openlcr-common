@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package net.openlcr.utique.common.utils;
+package net.openlcr.common.utils;
 
 import java.io.Serializable;
 import java.net.InetAddress;

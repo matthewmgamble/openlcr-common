@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package net.openlcr.utique.common.classes;
+package net.openlcr.common.classes;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

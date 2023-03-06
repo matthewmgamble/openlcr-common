@@ -14,24 +14,24 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package net.openlcr.utique.common.classes;
+package net.openlcr.common.classes;
 
 
 /**
  *
  * @author mgamble
  */
-public enum RouteDestination {
-    CANADA("C"),
-    USA("U"),
-    INTERNATIONAL("I");
+public enum SupportedPlatform {
+    METASWITCH("metaswitch"),
+    BROADWORKS("broadworks"),
+    M6("m6");
     
     private final String text;
 
     /**
      * @param text
      */
-    private RouteDestination(final String text) {
+    private SupportedPlatform(final String text) {
         this.text = text;
     }
 
